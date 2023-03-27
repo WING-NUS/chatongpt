@@ -1,3 +1,3 @@
-# SSNLP-2022
+# Chat On GPT 
 
-Website for SSNLP 2022 to be held at School of Computing, National University of Singapore on Friday, 13 May 2022.
+Website for the Chat On GPT 2023 event, to be held by the School of Computing, National University of Singapore on Tuesday, 18 April 2023, at University Town Auditorium 1.
