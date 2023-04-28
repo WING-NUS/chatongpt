@@ -76,6 +76,16 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 
+.nav button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .gallery {
   position: relative;
   height: 400px;
