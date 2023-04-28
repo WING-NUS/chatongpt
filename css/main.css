@@ -76,6 +76,24 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 
+.gallery {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.gallery img.active {
+  opacity: 1;
+}
 
 .container-table100 {
   width: 100%;
