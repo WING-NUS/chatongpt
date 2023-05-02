@@ -240,6 +240,77 @@
 </section>
 -->
 
+<section id="photos" class="bg-light">
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery img {
+            margin: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <img src="images/IMG_5377.jpg" alt="Image 1"/>
+                    <img src="images/IMG_5410.jpg" alt="Image 2"/>
+                    <img src="images/IMG_5420.jpg" alt="Image 3"/>
+                    <img src="images/IMG_5431.jpg" alt="Image 4"/>
+                    <img src="images/IMG_5449.jpg" alt="Image 5"/>
+                </div>
+                <div class="nav">
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var currentIndex = 0;
+            var images = $('.gallery img');
+            var imageCount = images.length;
+
+            function showImage(index) {
+                if (index < 0) {
+                    index = imageCount - 1;
+                } else if (index >= imageCount) {
+                    index = 0;
+                }
+
+                images.removeClass('active');
+                images.eq(index).addClass('active');
+                currentIndex = index;
+            }
+
+            $('.prev').click(function() {
+                showImage(currentIndex - 1);
+            });
+
+            $('.next').click(function() {
+                showImage(currentIndex + 1);
+            });
+
+            setInterval(function() {
+                showImage(currentIndex + 1);
+            }, 5000);
+        });
+    </script>
+</section>
+
+
+
 <section id="programme" class="bg-light">
     <div class="container">
         <div class="row">
